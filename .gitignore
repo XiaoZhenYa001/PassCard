@@ -1,0 +1,38 @@
+# Gradle caches
+.gradle/
+app/.gradle/
+
+# Build outputs
+/build/
+/app/build/
+/app/release/
+/gradle/wrapper/dists/
+
+# IDE files
+*.iml
+/.idea/
+/app/.idea/
+/.vscode/
+
+# Local configuration
+/local.properties
+/app/local.properties
+
+# Keystore and signing artifacts (DO NOT COMMIT)
+*.jks
+*.keystore
+/GenerateAPK.jks
+
+# Packaged artifacts
+*.apk
+*.aab
+
+# Native/NDK build outputs
+/.externalNativeBuild/
+/.cxx/
+
+# Miscellaneous
+*.log
+.DS_Store
+Thumbs.db
+captures/
