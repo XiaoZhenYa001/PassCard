@@ -1,0 +1,45 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.passwordmanager.test.app-mergeDebugAndroidTestResources-3:/values/values.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\8.9\\transforms\\4659ba956f526f2c1de78ae4e40fbc10\\transformed\\jetified-core-1.5.0\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "4,11",
+                        "startColumns": "0,0",
+                        "startOffsets": "176,544",
+                        "endLines": "10,17",
+                        "endColumns": "8,8",
+                        "endOffsets": "543,909"
+                    },
+                    "to": {
+                        "startLines": "8,15",
+                        "startColumns": "4,4",
+                        "startOffsets": "513,885",
+                        "endLines": "14,21",
+                        "endColumns": "8,8",
+                        "endOffsets": "880,1250"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Administrator\\Desktop\\PassCard_Project\\PassCard\\app\\build\\generated\\res\\resValues\\androidTest\\debug\\values\\gradleResValues.xml",
+                    "from": {
+                        "startLines": "6,8,10,12,14,16",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "161,286,399,525,649,770",
+                        "endColumns": "80,68,81,79,76,68",
+                        "endOffsets": "237,350,476,600,721,834"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "55,136,205,287,367,444",
+                        "endColumns": "80,68,81,79,76,68",
+                        "endOffsets": "131,200,282,362,439,508"
+                    }
+                }
+            ]
+        }
+    ]
+}

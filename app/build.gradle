@@ -1,0 +1,215 @@
+// 应用Android应用程序插件，表明这是一个Android应用程序模块
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    // 定义应用的包名
+    namespace 'com.passwordmanager'
+    // 设置编译SDK版本，使用Android SDK 34版本编译
+    compileSdkVersion 34
+
+    // 配置应用签名信息，用于生成已签名的APK
+    signingConfigs {
+        // 发布版本的签名配置
+        release {
+            // 密钥库文件路径
+            storeFile file("../GenerateAPK.jks")
+            // 密钥库密码
+            storePassword "123456"        // 替换为你的 Keystore 密码
+            // 密钥别名
+            keyAlias "PassCard"          // 确认你的 key alias 名称
+            // 密钥密码
+            keyPassword "123456"         // 替换为你的 key 密码
+        }
+    }
+
+    // 默认配置，定义应用的基本属性
+    // 配置aapt打包工具选项
+    // 设置不压缩的文件类型，保持mp4和png文件原样不压缩
+    // 关闭PNG优化压缩，可以加快构建速度
+    aaptOptions {
+        noCompress "mp4", "png"
+        cruncherEnabled = false
+    }
+
+    defaultConfig {
+        // 应用的唯一标识符
+        applicationId "com.passwordmanager"
+        // 最低支持的Android版本为8.0（API 26）
+        minSdkVersion 26 // Android 8.0
+        // 目标Android版本
+        targetSdkVersion 34
+        // 应用的内部版本号，用于版本控制
+        versionCode 1
+        // 应用的版本名称，用于向用户显示
+        versionName "1.2.7"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    lint {
+        baseline = file("lint-baseline.xml")
+        abortOnError = false
+        checkReleaseBuilds = false
+        // 添加以下配置
+        checkDependencies = true
+        ignoreWarnings = true
+    }
+
+    configurations.all {
+        resolutionStrategy {
+            force 'androidx.test:monitor:1.6.1'
+        }
+    }
+    
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            def project = "PassCard"
+            def separator = "_"
+            def buildType = variant.buildType.name
+            def versionName = variant.versionName
+            def versionCode = 1.2
+            def date = new Date()
+            def formattedDate = date.format('yyyyMMdd_HHmm')
+
+            def newApkName = "${project}${separator}${buildType}${separator}${versionName}${separator}${versionCode}${separator}${formattedDate}.apk"
+
+            output.outputFileName = newApkName
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            resValue "string", "app_build_type", "正式发布版本"
+            resValue "string", "app_build_time", new Date().format("yyyy-MM-dd HH:mm")
+            resValue "string", "app_description", "一个安全、便捷的密码管理工具"
+            resValue "string", "app_version", "1.2"
+            resValue "string", "app_developer", "PassCard Team"
+            resValue "string", "app_contact", "support@passcard.com"
+        }
+        
+        debug {
+            applicationIdSuffix ".debug"
+            versionNameSuffix "-debug"
+            resValue "string", "app_build_type", "调试版本"
+            resValue "string", "app_build_time", new Date().format("yyyy-MM-dd HH:mm")
+            resValue "string", "app_description", "一个安全、便捷的密码管理工具"
+            resValue "string", "app_version", "1.2 正式版"
+            resValue "string", "app_developer", "PassCard Team"
+            resValue "string", "app_contact", "support@passcard.com"
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+// 依赖配置，声明项目所需的各种库
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.recyclerview:recyclerview:1.3.1'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    
+    // 导航组件依赖，用于实现应用内导航
+    implementation 'androidx.navigation:navigation-fragment:2.7.6'
+    implementation 'androidx.navigation:navigation-ui:2.7.6'
+    // Material Design组件，提供现代化的UI控件
+    implementation 'com.google.android.material:material:1.11.0'
+    
+    // Glide图片加载库，支持加载GIF等图片格式
+    implementation 'com.github.bumptech.glide:glide:4.16.0'
+    // Glide注解处理器
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.16.0'
+    
+    // Room数据库组件，用于本地数据持久化
+    def room_version = '2.6.1'
+    implementation "androidx.room:room-runtime:$room_version"
+    // Room注解处理器
+    annotationProcessor "androidx.room:room-compiler:$room_version"
+
+    // LiveData和ViewModel组件，用于实现MVVM架构
+    implementation 'androidx.lifecycle:lifecycle-viewmodel:2.6.1'
+    implementation 'androidx.lifecycle:lifecycle-livedata:2.6.1'
+    // 添加 SplashScreen 依赖
+    implementation 'androidx.core:core-splashscreen:1.0.1'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}
+
+    // 添加配置项以解决依赖警告
+    configurations.all {
+        resolutionStrategy {
+            // 启用依赖配置的严格模式
+            failOnVersionConflict()
+            // 强制使用指定版本的依赖
+            force 'androidx.core:core-ktx:1.12.0'
+            force 'androidx.lifecycle:lifecycle-runtime:2.6.2'
+            force 'org.jetbrains.kotlin:kotlin-stdlib:1.9.10'
+            force 'org.jetbrains.kotlin:kotlin-stdlib-common:1.9.10'
+        }
+    }
+    // 添加编译选项以显示详细的过时 API 信息
+    tasks.withType(JavaCompile) {
+        options.compilerArgs << "-Xlint:deprecation"
+    }
+
+    configurations.all {
+        resolutionStrategy {
+        failOnVersionConflict()
+        force 'androidx.annotation:annotation:1.6.0'
+        force 'androidx.collection:collection:1.1.0'
+        force 'androidx.arch.core:core-common:2.2.0'
+        force 'androidx.lifecycle:lifecycle-livedata:2.6.2'
+        force 'androidx.lifecycle:lifecycle-livedata-core:2.6.2'
+        force 'androidx.lifecycle:lifecycle-process:2.6.2'
+        force 'androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2'
+        force 'androidx.lifecycle:lifecycle-viewmodel:2.6.2'
+        force 'androidx.lifecycle:lifecycle-common:2.6.2'
+        force 'androidx.fragment:fragment:1.6.2'
+        force 'androidx.core:core-ktx:1.12.0'
+        force 'androidx.lifecycle:lifecycle-runtime:2.6.2'
+        force 'org.jetbrains.kotlin:kotlin-stdlib:1.9.10'
+        force 'org.jetbrains.kotlin:kotlin-stdlib-common:1.9.10'
+        force 'androidx.appcompat:appcompat:1.6.1'
+        force 'com.google.android.material:material:1.9.0'
+        force 'androidx.constraintlayout:constraintlayout:2.1.4'
+        force 'androidx.recyclerview:recyclerview:1.3.1'
+        force 'androidx.drawerlayout:drawerlayout:1.1.1'
+        force 'androidx.viewpager2:viewpager2:1.1.0-beta02'
+        force 'androidx.customview:customview:1.1.0'
+        force 'androidx.arch.core:core-runtime:2.2.0'
+        force 'androidx.annotation:annotation-experimental:1.3.0'
+        force 'androidx.core:core:1.12.0'
+        force 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.22'
+        force 'com.google.guava:guava:31.1-jre'
+        
+        // Add new force rules
+        force 'androidx.activity:activity:1.7.2'
+        force 'androidx.savedstate:savedstate:1.2.1'
+        force 'androidx.lifecycle:lifecycle-livedata-core-ktx:2.6.2'
+        force 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2'
+        force 'androidx.lifecycle:lifecycle-runtime-ktx:2.6.2'
+        force 'androidx.transition:transition:1.4.1'
+        force 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4'
+        force 'androidx.startup:startup-runtime:1.1.1'
+        force 'androidx.activity:activity-ktx:1.7.2'
+        force 'androidx.concurrent:concurrent-futures:1.1.0'
+    }
+}
+
+
+android {
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}

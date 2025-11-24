@@ -1,0 +1,9 @@
+com.passwordmanager.test
+string app_build_time
+string app_build_type
+string app_contact
+string app_description
+string app_developer
+string app_version
+style WhiteBackgroundDialogTheme
+style WhiteBackgroundTheme

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PassCard</string>
+    <string name="search_hint">搜索密码</string>
+    <string name="search_icon">搜索图标</string>
+    <string name="menu_icon">菜单图标</string>
+    <string name="add_password">添加密码</string>
+    <string name="no_passwords">暂无密码记录</string>
+    <string name="copy_password">复制密码</string>
+    <string name="view_details">查看详情</string>
+    <string name="more_options">更多选项</string>
+    <string name="label_phone">手机号：</string>
+    <string name="label_email">邮箱：</string>
+    <string name="menu_home">首页</string>
+    <string name="menu_categories">分类</string>
+    <string name="menu_settings">设置</string>
+    
+    <!-- 添加的新字符串资源 -->
+    <string name="hint_username">用户名</string>
+    <string name="hint_phone">手机号</string>
+    <string name="hint_email">邮箱</string>
+    <string name="hint_password">密码</string>
+    <string name="hint_note">备注</string>
+    <string name="save">保存</string>
+    <string name="cancel">取消</string>
+    <string name="error_empty_fields">请至少填写一项信息</string>
+    <string name="password_saved">密码已保存</string>
+    <string name="action_settings">设置</string>
+    <string name="action_about">作者介绍</string>
+    <string name="app_auther"><b><i><u>支持作者</u></i></b></string>
+    <string name="action_backup">数据备份</string>
+    <string name="action_restore">数据恢复</string>
+</resources>

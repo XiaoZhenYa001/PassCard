@@ -1,0 +1,6 @@
+com.passwordmanager.test.app-jetified-annotation-experimental-1.3.0-0 C:\Users\Administrator\.gradle\caches\8.9\transforms\13f30f57626ab1ae1acd72981a76cafb\transformed\jetified-annotation-experimental-1.3.0\res
+com.passwordmanager.test.app-jetified-core-1.5.0-1 C:\Users\Administrator\.gradle\caches\8.9\transforms\4659ba956f526f2c1de78ae4e40fbc10\transformed\jetified-core-1.5.0\res
+com.passwordmanager.test.app-androidTest-2 C:\Users\Administrator\Desktop\PassCard_Project\PassCard\app\build\generated\res\resValues\androidTest\debug
+com.passwordmanager.test.app-mergeDebugAndroidTestResources-3 C:\Users\Administrator\Desktop\PassCard_Project\PassCard\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.passwordmanager.test.app-mergeDebugAndroidTestResources-4 C:\Users\Administrator\Desktop\PassCard_Project\PassCard\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.passwordmanager.test.app-merged_res-5 C:\Users\Administrator\Desktop\PassCard_Project\PassCard\app\build\intermediates\merged_res\debugAndroidTest

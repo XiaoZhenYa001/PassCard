@@ -1,0 +1,20 @@
+{
+  "version": 3,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.passwordmanager.debug",
+  "variantName": "debug",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "attributes": [],
+      "versionCode": 1,
+      "versionName": "1.2.7-debug",
+      "outputFile": "PassCard_debug_1.2.7-debug_1.2_20251019_2203.apk"
+    }
+  ],
+  "elementType": "File"
+}

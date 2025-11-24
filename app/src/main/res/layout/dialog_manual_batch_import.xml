@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/entries_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- 动态添加的条目将在这里显示 -->
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/add_entry_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="添加新条目"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>

@@ -1,0 +1,8 @@
+com.passwordmanager.debug.test:style/WhiteBackgroundTheme = 0x7f020001
+com.passwordmanager.debug.test:style/WhiteBackgroundDialogTheme = 0x7f020000
+com.passwordmanager.debug.test:string/app_developer = 0x7f010004
+com.passwordmanager.debug.test:string/app_build_type = 0x7f010001
+com.passwordmanager.debug.test:string/app_description = 0x7f010003
+com.passwordmanager.debug.test:string/app_contact = 0x7f010002
+com.passwordmanager.debug.test:string/app_version = 0x7f010005
+com.passwordmanager.debug.test:string/app_build_time = 0x7f010000

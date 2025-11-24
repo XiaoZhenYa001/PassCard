@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="UnsafeDynamicallyLoadedCode" severity="ignore" />
+    <issue id="UnsafeIntentLaunch" severity="ignore" />
+    <issue id="AnnotationProcessorOnCompilePath" severity="ignore" />
+    <!-- 其他需要忽略的警告 -->
+</lint>

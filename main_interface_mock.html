@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PassCard 主界面模拟</title>
+    <!-- 引入 Material Web Components CDN -->
+    <script type="module" src="https://unpkg.com/@material/web@1.0.0-pre.10/index.js"></script>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: var(--md-sys-color-primary);
+            color: var(--md-sys-color-on-primary);
+            padding: 16px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 20px;
+            flex-grow: 1;
+        }
+        main {
+            flex-grow: 1;
+            padding: 16px;
+        }
+        .card-list {
+            display: grid;
+            gap: 16px;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        }
+        .password-card {
+            background-color: var(--md-sys-color-surface);
+            color: var(--md-sys-color-on-surface);
+            border-radius: 12px;
+            padding: 16px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .password-card h3 {
+            margin: 0;
+            font-size: 18px;
+            color: var(--md-sys-color-primary);
+        }
+        .password-card p {
+            margin: 0;
+            font-size: 14px;
+            color: var(--md-sys-color-on-surface-variant);
+        }
+        .fab-container {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            z-index: 1000;
+        }
+        /* Material Design 3 颜色变量 (示例，实际应从主题获取) */
+        :root {
+            --md-sys-color-primary: #6750A4;
+            --md-sys-color-on-primary: #FFFFFF;
+            --md-sys-color-surface: #FFFBFE;
+            --md-sys-color-on-surface: #1C1B1F;
+            --md-sys-color-on-surface-variant: #49454F;
+            --md-sys-color-secondary-container: #E8DEF8;
+            --md-sys-color-on-secondary-container: #1D192B;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <md-icon-button>
+            <md-icon>menu</md-icon>
+        </md-icon-button>
+        <h1>PassCard</h1>
+        <md-icon-button>
+            <md-icon>search</md-icon>
+        </md-icon-button>
+        <md-icon-button>
+            <md-icon>more_vert</md-icon>
+        </md-icon-button>
+    </header>
+
+    <main>
+        <div class="card-list">
+            <div class="password-card">
+                <h3>Google</h3>
+                <p>用户名: example@gmail.com</p>
+                <p>密码: ************</p>
+                <md-filled-button>
+                    <md-icon slot="icon">content_copy</md-icon>
+                    复制密码
+                </md-filled-button>
+            </div>
+            <div class="password-card">
+                <h3>Facebook</h3>
+                <p>用户名: example_fb</p>
+                <p>密码: ************</p>
+                <md-filled-button>
+                    <md-icon slot="icon">content_copy</md-icon>
+                    复制密码
+                </md-filled-button>
+            </div>
+            <div class="password-card">
+                <h3>GitHub</h3>
+                <p>用户名: example_github</p>
+                <p>密码: ************</p>
+                <md-filled-button>
+                    <md-icon slot="icon">content_copy</md-icon>
+                    复制密码
+                </md-filled-button>
+            </div>
+            <div class="password-card">
+                <h3>Amazon</h3>
+                <p>用户名: example@amazon.com</p>
+                <p>密码: ************</p>
+                <md-filled-button>
+                    <md-icon slot="icon">content_copy</md-icon>
+                    复制密码
+                </md-filled-button>
+            </div>
+            <div class="password-card">
+                <h3>Twitter</h3>
+                <p>用户名: example_twitter</p>
+                <p>密码: ************</p>
+                <md-filled-button>
+                    <md-icon slot="icon">content_copy</md-icon>
+                    复制密码
+                </md-filled-button>
+            </div>
+        </div>
+    </main>
+
+    <div class="fab-container">
+        <md-fab extended>
+            <md-icon slot="icon">add</md-icon>
+            添加密码
+        </md-fab>
+    </div>
+</body>
+</html>

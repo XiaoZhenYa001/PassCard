@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_build_time" translatable="false">2025-10-19 22:03</string>
+    <string name="app_build_type" translatable="false">调试版本</string>
+    <string name="app_contact" translatable="false">support@passcard.com</string>
+    <string name="app_description" translatable="false">一个安全、便捷的密码管理工具</string>
+    <string name="app_developer" translatable="false">PassCard Team</string>
+    <string name="app_version" translatable="false">1.2 正式版</string>
+    <style name="WhiteBackgroundDialogTheme" parent="@android:style/Theme.Holo.Dialog.NoActionBar">
+<item name="android:windowNoTitle">true</item>
+<item name="android:windowFullscreen">false</item>
+<item name="android:fadingEdge">none</item>
+<item name="android:windowBackground">@android:color/white</item>
+<item name="android:windowAnimationStyle">@null</item>
+</style>
+    <style name="WhiteBackgroundTheme" parent="@android:style/Theme.Holo.NoActionBar.Fullscreen">
+<item name="android:windowNoTitle">true</item>
+<item name="android:windowFullscreen">false</item>
+<item name="android:fadingEdge">none</item>
+<item name="android:windowBackground">@android:color/white</item>
+<item name="android:windowAnimationStyle">@null</item>
+</style>
+</resources>

@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary_color">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="@drawable/ic_back"
+            app:title="设置"
+            app:titleTextColor="#FFFFFF">
+
+
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="主题设置"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/button_random_theme"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text="随机主题"
+                            android:drawableStart="@drawable/ic_theme"
+                            android:drawablePadding="8dp"
+                            android:padding="12dp"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/text_primary"
+                            android:clickable="true"
+                            android:focusable="true" />
+                    <TextView
+                        android:id="@+id/button_reset_theme"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="恢复默认"
+                        android:drawableStart="@drawable/ic_default"
+                        android:drawablePadding="8dp"
+                        android:padding="12dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/text_primary"
+                        android:clickable="true"
+                        android:focusable="true" />
+                    <TextView
+                        android:id="@+id/md3_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="MD3"
+                        android:layout_marginTop="8dp"
+                        android:padding="12dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/text_primary"
+                        android:clickable="true"
+                        android:focusable="true"
+                        />
+
+                    <TextView
+                        android:id="@+id/button_wallpaper"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="更换壁纸"
+                        android:drawableStart="@drawable/ic_wallpaper"
+                        android:drawablePadding="8dp"
+                        android:padding="12dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/text_primary"
+                        android:clickable="true"
+                        android:focusable="true" />
+                    <LinearLayout
+                    android:id="@+id/wallpaper_options_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:layout_marginStart="24dp">
+                    <TextView
+                        android:id="@+id/button_change_main_wallpaper"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="更换主界面"
+                        android:padding="12dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/setting_text_background"
+                        android:textSize="11dp"
+                        android:background="@color/setting_photo_background"
+                        android:clickable="true"
+                        android:focusable="true" />
+                    <TextView
+                        android:id="@+id/button_change_sidebar_wallpaper"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="更换侧边栏"
+                        android:layout_marginTop="2dp"
+                        android:padding="12dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/setting_text_background"
+                        android:textSize="11dp"
+                        android:background="@color/setting_photo_background"
+                        android:clickable="true"
+                        android:focusable="true" />
+
+                </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="搜索栏透明度"
+                        android:textSize="14sp" />
+
+                    <SeekBar
+                        android:id="@+id/search_bar_alpha_seekbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:max="100"
+                        android:progress="100" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="密码卡片透明度"
+                        android:textSize="14sp" />
+
+                    <SeekBar
+                        android:id="@+id/password_card_alpha_seekbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:max="100"
+                        android:progress="100" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="删除按钮透明度"
+                        android:textSize="14sp" />
+
+                    <SeekBar
+                        android:id="@+id/delete_button_alpha_seekbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:max="100"
+                        android:progress="100" />
+
+
+
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="备份与恢复"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/button_backup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="备份数据"
+                        android:drawableStart="@drawable/ic_backup"
+                        android:drawablePadding="8dp"
+                        android:padding="12dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/text_primary"
+                        android:clickable="true"
+                        android:focusable="true" />
+
+                    <TextView
+                        android:id="@+id/button_restore"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="恢复数据"
+                        android:drawableStart="@drawable/ic_recovery"
+                        android:drawablePadding="8dp"
+                        android:padding="12dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/text_primary"
+                        android:clickable="true"
+                        android:focusable="true" />
+
+                    <TextView
+                        android:id="@+id/button_export"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="导出密码"
+                        android:drawableStart="@drawable/ic_import_export"
+                        android:drawablePadding="8dp"
+                        android:padding="12dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/text_primary"
+                        android:clickable="true"
+                        android:focusable="true" />
+
+                    <TextView
+                        android:id="@+id/button_import"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="导入密码"
+                        android:drawableStart="@drawable/ic_import_import"
+                        android:drawablePadding="8dp"
+                        android:padding="12dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/text_primary"
+                        android:clickable="true"
+                        android:focusable="true" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="关于"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_version"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:drawableStart="@drawable/ic_version"
+                        android:drawablePadding="8dp"
+                        android:text="版本：1.2" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

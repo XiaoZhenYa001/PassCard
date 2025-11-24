@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Automatically generated file. DO NOT MODIFY -->
+
+    <!-- Value from build type: debug -->
+    <string name="app_build_time" translatable="false">2025-10-23 22:24</string>
+    <!-- Value from build type: debug -->
+    <string name="app_build_type" translatable="false">调试版本</string>
+    <!-- Value from build type: debug -->
+    <string name="app_contact" translatable="false">support@passcard.com</string>
+    <!-- Value from build type: debug -->
+    <string name="app_description" translatable="false">一个安全、便捷的密码管理工具</string>
+    <!-- Value from build type: debug -->
+    <string name="app_developer" translatable="false">PassCard Team</string>
+    <!-- Value from build type: debug -->
+    <string name="app_version" translatable="false">1.2 正式版</string>
+
+</resources>

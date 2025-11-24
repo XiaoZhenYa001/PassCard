@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_color">#2196F3</color>
+    <color name="primary_dark_color">#1976D2</color>
+    <color name="accent_color">#FF4081</color>
+    <color name="background_color">#F5F5F5</color>
+    <color name="text_primary">#000000</color>
+    <color name="setting_text_background">#2A2A2A</color>
+    <color name="text_secondary">#757575</color>
+    <color name="white">#eaef5c</color>
+    <color name="pay_background">#ABABAD</color>
+    <color name="setting_photo_background">#ebebeb</color>
+    <color name="card_stroke_color">#E0E0E0</color>
+    <color name="title_text_color">#5c98ef</color>
+    <color name="search_text_color">#FFFFFF</color>
+    <color name="md3_primary">#6750A4</color>
+    <color name="md3_onPrimary">#FFFFFF</color>
+    <color name="md3_secondary">#625B71</color>
+    <color name="md3_onSecondary">#FFFFFF</color>
+    <color name="md3_surface">#FFFBFE</color>
+    <color name="md3_onSurface">#1C1B1F</color>
+</resources>

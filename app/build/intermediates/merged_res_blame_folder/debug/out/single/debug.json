@@ -1,0 +1,230 @@
+[
+    {
+        "merged": "com.passwordmanager.app-merged_res-49:/drawable_ic_search.xml.flat",
+        "source": "com.passwordmanager.app-main-51:/drawable/ic_search.xml"
+    },
+    {
+        "merged": "com.passwordmanager.app-merged_res-49:/layout_activity_settings.xml.flat",
+        "source": "com.passwordmanager.app-main-51:/layout/activity_settings.xml"
+    },
+    {
+        "merged": "com.passwordmanager.app-merged_res-49:/layout_dialog_manual_import.xml.flat",
+        "source": "com.passwordmanager.app-main-51:/layout/dialog_manual_import.xml"
+    },
+    {
+        "merged": "com.passwordmanager.app-merged_res-49:/layout_dialog_progress.xml.flat",
+        "source": "com.passwordmanager.app-main-51:/layout/dialog_progress.xml"
+    },
+    {
+        "merged": "com.passwordmanager.app-merged_res-49:/layout_save_button_layout.xml.flat",
+        "source": "com.passwordmanager.app-main-51:/layout/save_button_layout.xml"
+    },
+    {
+        "merged": "com.passwordmanager.app-merged_res-49:/drawable_img01.png.flat",
+        "source": "com.passwordmanager.app-main-51:/drawable/img01.png"
+    },
+    {
+        "merged": "com.passwordmanager.app-merged_res-49:/drawable_ic_back.xml.flat",
+        "source": "com.passwordmanager.app-main-51:/drawable/ic_back.xml"
+    },
+    {
+        "merged": "com.passwordmanager.app-merged_res-49:/drawable_ic_theme.png.flat",
+        "source": "com.passwordmanager.app-main-51:/drawable/ic_theme.png"
+    },
+    {
+        "merged": "com.passwordmanager.app-merged_res-49:/drawable_ic_passcard_txt.png.flat",
+        "source": "com.passwordmanager.app-main-51:/drawable/ic_passcard_txt.png"
+    },
+    {
+        "merged": "com.passwordmanager.app-merged_res-49:/drawable_menu.png.flat",
+        "source": "com.passwordmanager.app-main-51:/drawable/menu.png"
+    },
+    {
+        "merged": "com.passwordmanager.app-merged_res-49:/menu_settings_menu.xml.flat",
+        "source": "com.passwordmanager.app-main-51:/menu/settings_menu.xml"
+    },
+    {
+        "merged": "com.passwordmanager.app-merged_res-49:/drawable_ic_default.png.flat",
+        "source": "com.passwordmanager.app-main-51:/drawable/ic_default.png"
+    },
+    {
+        "merged": "com.passwordmanager.app-merged_res-49:/layout_nav_header.xml.flat",
+        "source": "com.passwordmanager.app-main-51:/layout/nav_header.xml"
+    },
+    {
+        "merged": "com.passwordmanager.app-merged_res-49:/drawable_ic_settings.xml.flat",
+        "source": "com.passwordmanager.app-main-51:/drawable/ic_settings.xml"
+    },
+    {
+        "merged": "com.passwordmanager.app-merged_res-49:/drawable_ic_import_import.png.flat",
+        "source": "com.passwordmanager.app-main-51:/drawable/ic_import_import.png"
+    },
+    {
+        "merged": "com.passwordmanager.app-merged_res-49:/drawable_ic_email.png.flat",
+        "source": "com.passwordmanager.app-main-51:/drawable/ic_email.png"
+    },
+    {
+        "merged": "com.passwordmanager.app-merged_res-49:/layout_item_password_entry.xml.flat",
+        "source": "com.passwordmanager.app-main-51:/layout/item_password_entry.xml"
+    },
+    {
+        "merged": "com.passwordmanager.app-merged_res-49:/layout_activity_main.xml.flat",
+        "source": "com.passwordmanager.app-main-51:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.passwordmanager.app-merged_res-49:/drawable_ic_passcard.xml.flat",
+        "source": "com.passwordmanager.app-main-51:/drawable/ic_passcard.xml"
+    },
+    {
+        "merged": "com.passwordmanager.app-merged_res-49:/drawable_ic_note.png.flat",
+        "source": "com.passwordmanager.app-main-51:/drawable/ic_note.png"
+    },
+    {
+        "merged": "com.passwordmanager.app-merged_res-49:/drawable_ic_copy.xml.flat",
+        "source": "com.passwordmanager.app-main-51:/drawable/ic_copy.xml"
+    },
+    {
+        "merged": "com.passwordmanager.app-merged_res-49:/drawable_ic_wallpaper1.png.flat",
+        "source": "com.passwordmanager.app-main-51:/drawable/ic_wallpaper1.png"
+    },
+    {
+        "merged": "com.passwordmanager.app-merged_res-49:/drawable_ic_menu.xml.flat",
+        "source": "com.passwordmanager.app-main-51:/drawable/ic_menu.xml"
+    },
+    {
+        "merged": "com.passwordmanager.app-merged_res-49:/menu_search_type_menu.xml.flat",
+        "source": "com.passwordmanager.app-main-51:/menu/search_type_menu.xml"
+    },
+    {
+        "merged": "com.passwordmanager.app-merged_res-49:/drawable_ic_import_export.png.flat",
+        "source": "com.passwordmanager.app-main-51:/drawable/ic_import_export.png"
+    },
+    {
+        "merged": "com.passwordmanager.app-merged_res-49:/drawable_ic_backup.png.flat",
+        "source": "com.passwordmanager.app-main-51:/drawable/ic_backup.png"
+    },
+    {
+        "merged": "com.passwordmanager.app-merged_res-49:/drawable_ic_nocheck_circle.xml.flat",
+        "source": "com.passwordmanager.app-main-51:/drawable/ic_nocheck_circle.xml"
+    },
+    {
+        "merged": "com.passwordmanager.app-merged_res-49:/drawable_ic_wallpaper.png.flat",
+        "source": "com.passwordmanager.app-main-51:/drawable/ic_wallpaper.png"
+    },
+    {
+        "merged": "com.passwordmanager.app-merged_res-49:/layout_activity_about.xml.flat",
+        "source": "com.passwordmanager.app-main-51:/layout/activity_about.xml"
+    },
+    {
+        "merged": "com.passwordmanager.app-merged_res-49:/layout_dialog_manual_batch_import.xml.flat",
+        "source": "com.passwordmanager.app-main-51:/layout/dialog_manual_batch_import.xml"
+    },
+    {
+        "merged": "com.passwordmanager.app-merged_res-49:/drawable_ic_service.png.flat",
+        "source": "com.passwordmanager.app-main-51:/drawable/ic_service.png"
+    },
+    {
+        "merged": "com.passwordmanager.app-merged_res-49:/drawable_ic_username.png.flat",
+        "source": "com.passwordmanager.app-main-51:/drawable/ic_username.png"
+    },
+    {
+        "merged": "com.passwordmanager.app-merged_res-49:/drawable_ic_more.xml.flat",
+        "source": "com.passwordmanager.app-main-51:/drawable/ic_more.xml"
+    },
+    {
+        "merged": "com.passwordmanager.app-merged_res-49:/drawable_img03.png.flat",
+        "source": "com.passwordmanager.app-main-51:/drawable/img03.png"
+    },
+    {
+        "merged": "com.passwordmanager.app-merged_res-49:/drawable_loading.png.flat",
+        "source": "com.passwordmanager.app-main-51:/drawable/loading.png"
+    },
+    {
+        "merged": "com.passwordmanager.app-merged_res-49:/drawable_ic_check_circle_filled.png.flat",
+        "source": "com.passwordmanager.app-main-51:/drawable/ic_check_circle_filled.png"
+    },
+    {
+        "merged": "com.passwordmanager.app-merged_res-49:/drawable_ic_add.png.flat",
+        "source": "com.passwordmanager.app-main-51:/drawable/ic_add.png"
+    },
+    {
+        "merged": "com.passwordmanager.app-merged_res-49:/drawable_ic_delete.xml.flat",
+        "source": "com.passwordmanager.app-main-51:/drawable/ic_delete.xml"
+    },
+    {
+        "merged": "com.passwordmanager.app-merged_res-49:/menu_password_item_menu.xml.flat",
+        "source": "com.passwordmanager.app-main-51:/menu/password_item_menu.xml"
+    },
+    {
+        "merged": "com.passwordmanager.app-merged_res-49:/drawable_ic_wechat_pay1.png.flat",
+        "source": "com.passwordmanager.app-main-51:/drawable/ic_wechat_pay1.png"
+    },
+    {
+        "merged": "com.passwordmanager.app-merged_res-49:/drawable_ic_phone.png.flat",
+        "source": "com.passwordmanager.app-main-51:/drawable/ic_phone.png"
+    },
+    {
+        "merged": "com.passwordmanager.app-merged_res-49:/drawable_ic_details.xml.flat",
+        "source": "com.passwordmanager.app-main-51:/drawable/ic_details.xml"
+    },
+    {
+        "merged": "com.passwordmanager.app-merged_res-49:/drawable_ic_select_all.png.flat",
+        "source": "com.passwordmanager.app-main-51:/drawable/ic_select_all.png"
+    },
+    {
+        "merged": "com.passwordmanager.app-merged_res-49:/drawable_ic_unselect_all.xml.flat",
+        "source": "com.passwordmanager.app-main-51:/drawable/ic_unselect_all.xml"
+    },
+    {
+        "merged": "com.passwordmanager.app-merged_res-49:/drawable_ic_close.png.flat",
+        "source": "com.passwordmanager.app-main-51:/drawable/ic_close.png"
+    },
+    {
+        "merged": "com.passwordmanager.app-merged_res-49:/drawable_ic_version.png.flat",
+        "source": "com.passwordmanager.app-main-51:/drawable/ic_version.png"
+    },
+    {
+        "merged": "com.passwordmanager.app-merged_res-49:/drawable_ic_recovery.png.flat",
+        "source": "com.passwordmanager.app-main-51:/drawable/ic_recovery.png"
+    },
+    {
+        "merged": "com.passwordmanager.app-merged_res-49:/layout_dialog_batch_import.xml.flat",
+        "source": "com.passwordmanager.app-main-51:/layout/dialog_batch_import.xml"
+    },
+    {
+        "merged": "com.passwordmanager.app-merged_res-49:/layout_activity_wechat_pay.xml.flat",
+        "source": "com.passwordmanager.app-main-51:/layout/activity_wechat_pay.xml"
+    },
+    {
+        "merged": "com.passwordmanager.app-merged_res-49:/drawable_ic_password.png.flat",
+        "source": "com.passwordmanager.app-main-51:/drawable/ic_password.png"
+    },
+    {
+        "merged": "com.passwordmanager.app-merged_res-49:/layout_item_password.xml.flat",
+        "source": "com.passwordmanager.app-main-51:/layout/item_password.xml"
+    },
+    {
+        "merged": "com.passwordmanager.app-merged_res-49:/drawable_img02.png.flat",
+        "source": "com.passwordmanager.app-main-51:/drawable/img02.png"
+    },
+    {
+        "merged": "com.passwordmanager.app-merged_res-49:/layout_item_manual_import_entry.xml.flat",
+        "source": "com.passwordmanager.app-main-51:/layout/item_manual_import_entry.xml"
+    },
+    {
+        "merged": "com.passwordmanager.app-merged_res-49:/drawable_ic_home.xml.flat",
+        "source": "com.passwordmanager.app-main-51:/drawable/ic_home.xml"
+    },
+    {
+        "merged": "com.passwordmanager.app-merged_res-49:/menu_bottom_navigation_menu.xml.flat",
+        "source": "com.passwordmanager.app-main-51:/menu/bottom_navigation_menu.xml"
+    },
+    {
+        "merged": "com.passwordmanager.app-merged_res-49:/menu_main_menu.xml.flat",
+        "source": "com.passwordmanager.app-main-51:/menu/main_menu.xml"
+    },
+    {
+        "merged": "com.passwordmanager.app-merged_res-49:/layout_dialog_add_password.xml.flat",
+        "source": "com.passwordmanager.app-main-51:/layout/dialog_add_password.xml"
+    }
+]
